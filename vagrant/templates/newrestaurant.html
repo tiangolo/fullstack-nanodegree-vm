@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Restaurant</title>
+</head>
+<body>
+<h1>New Restaurant</h1>
+<form action="{{url_for('newRestaurant')}}" enctype="multipart/form-data", method="POST">
+<strong>Name:</strong> <input type="text" name="name"><input type="submit">
+</form>
+<a href="{{url_for('showRestaurants')}}">Cancel</a>
+</body>
+</html>
